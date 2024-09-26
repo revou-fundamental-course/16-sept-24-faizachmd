@@ -5,33 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link re="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 
+<body style="color: black; font-family: sans-serif; background-color: white;">
 <body>
-    <header>
+    <header class="main-header">
         <!-- Logo -->
         <div class="logo-icon"></div>
 
         <!-- Navigation -->
-        <nav></nav>
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Profile</a>
+            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-message">Message</a>
+        </nav>
     </header>
+
+    <hr />
 
     <main>
         <!-- Home -->
-        <section></section>
+        <section id="section-home">
+            <header>
+                <h1 class="inline">Hi <h1 class="inline" id="user-name">User</h1>, Welcome to My Website</h1>
+            </header>
 
-        <!-- Our Profile -->
-        <section></section>
+            <article>
+                <p style="
+                font-size: 20px;
+                text-align: justify;
+                font-family: -webkit-body;">This is my Portofolio Website</p>
+
+                <!-- Photo Banner -->
+                 <div class="photo-banner"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Profile -->
+        <section id="section-our-profile">
+            <header>
+                <h1>Profile</h1>
+            </header>
+
+            <div class="profile-icon-container">
+            <div>
+                <div class="profile-icon"></div>
+
+                <h4>About Me</h4>
+                <div class="profile-icon-container" style="text-align: justify; margin: 15px; padding: 10px; font-size: 16px; line-height: 1.5;">
+                <p>Hello, My name is Faiz Achmad Arifianto, I am from Cirebon city, I was born on January 01 2005 and I'am currently 19 years old,
+                     I am a one of students of the universities in Cirebon, I'm also have hobbies, there are sports, playing games and making cinematography. 
+                     Although in these hobbies I am not very good but I feel that I have talent and passion in these fields
+                     and now I am also studying and practicing about software engineer informatics techniques. 
+                     By learning these programs I hope I can get the results according to what i expected, that is becoming a great web developer.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr />
 
         <!-- Portofolio -->
-        <section></section>
+        <section id="section-portofolio">
+            <header>
+                <div class="portofolio-container">
+                </div>
 
-        <!-- Message Us -->
-        <section></section>
+                <h1>Portofolio</h1>
+                <div class="portofoli-container" style="text-align: justify; margin: 15px; padding: 5px; font: 16px;">
+                    <p>Below is a thumbnail of the cinematography results that I have made, you can check the complete details on my social media</p>
+                </div>
+
+                <div class="portofolio-icon"></div>
+                <div class="portofolio-icon2"></div>
+                <div class="portofolio-icon3"></div>
+            </header>
+        </section>
+
+        <hr />
+
+        <!-- Message -->
+        <section id="section-message">
+            <header>
+                <h1>Message</h1>
+            </header>
+
+            <section class="form-container">
+                <!-- Form -->
+                 <form>
+                    <div class="container">
+                        <div class="form-container">
+                          <form id="contactForm">
+                            <div class="form-group">
+                              <label for="name">Name:</label>
+                              <input type="text" id="name" name="name" placeholder="Nama" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="birthdate">Birth Date:</label>
+                              <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+                            <div class="form-group">
+                              <label>Gender:</label>
+                              <input type="radio" id="male" name="gender" value="Laki-Laki" checked>
+                              <label for="male">Male</label>
+                              <input type="radio" id="female" name="gender" value="Perempuan">
+                              <label for="female">Female</label>
+                            </div>
+                            <div class="form-group">
+                              <label for="message">:</label>
+                              <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                          </form>
+                        </div>
+                    
+                        <div class="message-container">
+                          <h3>Current time: <span id="currentTime"></span></h3>
+                          <p>Nama: <span id="messageName"></span></p>
+                          <p>Tanggal Lahir: <span id="messageBirthdate"></span></p>
+                          <p>Jenis Kelamin: <span id="messageGender"></span></p>
+                          <p>Pesan: <span id="messageMessage"></span></p>
+                        </div>
+                      </div>
+                    
+                 </form>
+            </section>
+        </section>
     </main>
 
-    <footer></footer>
+    <hr />
+
+    <footer>
+        <p style="text-align: right;">Created By Faiz</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>
